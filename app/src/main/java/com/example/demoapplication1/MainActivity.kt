@@ -2,6 +2,7 @@ package com.example.demoapplication1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener(){
             if(!edittext.text.isEmpty()){
                 textview.text = edittext.text
+                Log.i("input",textview.text.toString())
             }
         }
     }
